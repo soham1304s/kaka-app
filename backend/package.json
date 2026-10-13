@@ -1,0 +1,23 @@
+{
+  "name": "kaka-food-backend",
+  "version": "1.0.0",
+  "description": "Production-grade REST API backend & database for Kaka Food delivery mobile application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node -e \"require('./src/database/initDb').initializeDatabase().then(() => process.exit(0))\"",
+    "test": "node test/api.test.js"
+  },
+  "keywords": ["food-delivery", "express", "sqlite", "jwt", "flutter-backend"],
+  "author": "Kaka Food Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "sqlite3": "^6.0.1"
+  }
+}
